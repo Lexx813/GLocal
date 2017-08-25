@@ -1,0 +1,55 @@
+
+ "use strict"; // Start of use strict
+
+
+
+
+ $(function() {
+    $(document).click(function(event) {
+    $(".navbar-collapse").collapse("hide");
+       });
+    });
+
+ // Closes the Responsive Menu on Menu Item Click
+ $('.navbar-collapse ul li a').click(function() {
+     $('.navbar-toggle:visible').click();
+ });
+
+
+ $(function() {
+    // Auto play modal video
+    $(".video").click(function () {
+      var theModal = $(this).data("target"),
+      videoSRC = $(this).attr("data-video"),
+      videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+      $(theModal + ' iframe').attr('src', videoSRCauto);
+      $(theModal + ' button.close').click(function () {
+        $(theModal + ' iframe').attr('src', videoSRC);
+      });
+    });
+   });
+
+   // LIGHTBOX
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+  event.preventDefault();
+  $(this).ekkoLightbox();
+ });
+ 
+   
+
+
+//SLICK SLIDER
+$('.slider').slick({
+  infinite:true,
+  slideTowShow:1,
+  slideToScroll:1
+});
+
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".navbar-fixed-top");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+ 
+
