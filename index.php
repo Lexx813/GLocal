@@ -75,45 +75,63 @@
 <body data-spy="scroll" data-target="#navbarScroll">
 
     <!--Navbar-->
-    <nav id="navbarScroll" class="navbar fixed-top navbar-expand-lg  navbar-light bg-faded">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-        <a id="brand" class="navbar-brand" href="../index.html">GLocal</a>
+    <!--Navbar-->
+    <nav id="mainNav" class="navbar-default navbar fixed-top navbar-fixed-top navbar-expand-lg navbar-light bg-faded">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+    <a id="brand" class="navbar-brand" href="index.html">GLocal</a>
 
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="  navbar-nav ml-auto">
-                <li id="lang-switch" class="nav-item dropdown ">
-                    <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i id="lang_icon" class="fa fa-language" aria-hidden="true"></i></a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" value="en" href="#">English</a>
-                        <a class="dropdown-item" value="es" href="#">Spanish</a>
-                    </div>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link " href="../index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-            <li id="servdd" class="nav-item dropdown ">
-                    <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" value="en" href="../listings.html">Digital Listings Management </a>
-                        <a class="dropdown-item" value="es" href="../seo.html">Search Engine Optimization</a>
-                        <a class="dropdown-item" value="es" href="../seo.html">Social Media Marketing</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../why-glocal.html">Why GLocal</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="../websites.html">Websites</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link  " href="index.php">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    <ul class="  navbar-nav ml-auto">
+        <li id="lang-switch" class="nav-item dropdown ">
+             <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i id="lang_icon" class="fa fa-language" aria-hidden="true"></i></a> 
+            <div class="dropdown-menu">
+                <a id="en_click" class="dropdown-item button_lang" value="en" href="#">English</a>
+                <a id="sp_click" class="dropdown-item button_lang current_lang" value="es" href="#">Spanish</a>
+            </div>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link " href="#top">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li id="servdd" class="en nav-item dropdown ">
+            <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="listings.html">Digital listing Management </a>
+                <a class="dropdown-item" href="seo.html">Search engine Optimization</a>
+                <a class="dropdown-item" href="social-media.html">Social media marketing</a>
+            </div>
+        </li>
+        <li id="servdd" class="sp nav-item dropdown ">
+            <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Servicios</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="listings.html">Digital listing management </a>
+                <a class="dropdown-item" href="seo.html">Search engine Optimization</a>
+                <a class="dropdown-item" href="social-media.html">Social media marketing</a>
+            </div>
+        </li>
+        <li class="en nav-item">
+            <a class="nav-link" href="why-glocal.html">Why GLocal</a>
+        </li>
+        <li class="sp nav-item">
+            <a class="nav-link" href="why-glocal.html">Porque GLocal</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="websites.html">Websites</a>
+        </li>
+        <li class="en nav-item active">
+            <a class="nav-link " href="/index.php">Contact</a>
+        </li>
+
+        <li class="sp nav-item active">
+            <a class="nav-link " href="/index.php">Contacto</a>
+        </li>
+    </ul>
+    </div>
+</nav>
 
     <section id="contact" class="jumbotron jumbotron-fluid text-center">
         <div class="container">
@@ -159,13 +177,13 @@
                                 <h5>Company</h5>
                             </li>
                             <li>
-                                <a href="../why-glocal.html">Why GLocal</a>
+                                <a href="/why-glocal.html">Why GLocal</a>
                             </li>
                             <li>
-                                <a href="../websites.html">Websites</a>
+                                <a href="/websites.html">Websites</a>
                             </li>
                             <li>
-                                <a href="../index.php">Contact</a>
+                                <a href="/index.php">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -176,13 +194,13 @@
                                 <h5>Services</h5>
                             </li>
                             <li>
-                                <a href="../listings.html">Listings Management</a>
+                                <a href="/listings.html">Listings Management</a>
                             </li>
                             <li>
-                                <a href="../seo.html">Search Optimization</a>
+                                <a href="/seo.html">Search Optimization</a>
                             </li>
                             <li>
-                                <a href="../social-media.html">Social Media</a>
+                                <a href="/social-media.html">Social Media</a>
                             </li>
                         </ul>
                     </div>
